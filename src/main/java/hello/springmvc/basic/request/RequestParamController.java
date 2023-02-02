@@ -52,4 +52,14 @@ public class RequestParamController {
         log.info("username={}, age={}", username, age);
         return "ok";
     }
+
+    @ResponseBody
+    @RequestMapping("/request-param-required")
+    public String requestParamV5(
+            @RequestParam String username,
+            @RequestParam Integer age
+    ) {
+        log.info("username={}, age={}", username, age);
+        return "ok";
+    }
 }
