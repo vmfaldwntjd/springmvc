@@ -14,11 +14,11 @@ public class LogTestController {
     public String logTest() {
         String name = "Spring";
 
-        log.info(" info log = {}", name);
         log.trace(" trace log = {}", name);
-        log.error(" error log = {}", name);
         log.debug(" debug log = {}", name);
+        log.info(" info log = {}", name);
         log.warn(" warn log = {}", name);
+        log.error(" error log = {}", name);
 
         return "ok";
     }
