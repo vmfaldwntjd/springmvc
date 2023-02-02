@@ -55,7 +55,7 @@ public class RequestParamController {
 
     @ResponseBody
     @RequestMapping("/request-param-required")
-    public String requestParamV5(
+    public String requestParamRequired(
             @RequestParam String username,
             @RequestParam Integer age
     ) {
